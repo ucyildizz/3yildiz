@@ -1,0 +1,6 @@
+export { HeroSlider } from './hero-slider'
+export { CategoriesSection } from './categories-section'
+export { FeaturedProducts } from './featured-products'
+export { AboutSection } from './about-section'
+export { StatsSection } from './stats-section'
+export { CtaSection } from './cta-section'
