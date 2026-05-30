@@ -9,11 +9,12 @@ import { formatDate } from '@/lib/utils'
 export const revalidate = 60
 
 interface NewsDetailPageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
-  const news = await getNewsBySlug(params.slug).catch(() => null)
+  const { slug } = await params
+  const news = await getNewsBySlug(slug).catch(() => null)
 
   if (!news) {
     notFound()
