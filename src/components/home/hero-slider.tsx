@@ -29,22 +29,22 @@ function FloatingShapes() {
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {/* Large blob */}
       <div
-        className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-orange-500/20 to-orange-600/10 rounded-full blur-3xl animate-floatSlow"
+        className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-red-500/20 to-red-600/10 rounded-full blur-3xl animate-floatSlow"
         style={{ animationDelay: '0s' }}
       />
       {/* Medium blob */}
       <div
-        className="absolute top-1/2 -left-20 w-64 h-64 bg-gradient-to-br from-orange-400/15 to-yellow-500/10 rounded-full blur-2xl animate-floatSlow"
+        className="absolute top-1/2 -left-20 w-64 h-64 bg-gradient-to-br from-red-400/15 to-yellow-500/10 rounded-full blur-2xl animate-floatSlow"
         style={{ animationDelay: '2s' }}
       />
       {/* Small accent */}
       <div
-        className="absolute bottom-20 right-1/4 w-32 h-32 bg-gradient-to-br from-orange-500/20 to-red-500/10 rounded-full blur-xl animate-float"
+        className="absolute bottom-20 right-1/4 w-32 h-32 bg-gradient-to-br from-red-500/20 to-red-500/10 rounded-full blur-xl animate-float"
         style={{ animationDelay: '1s' }}
       />
       {/* Geometric shapes */}
-      <div className="absolute top-1/4 right-1/3 w-4 h-4 bg-orange-400/30 rotate-45 animate-bounce" style={{ animationDelay: '0.5s' }} />
-      <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-orange-300/40 rounded-full animate-bounce" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/4 right-1/3 w-4 h-4 bg-red-400/30 rotate-45 animate-bounce" style={{ animationDelay: '0.5s' }} />
+      <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-red-300/40 rounded-full animate-bounce" style={{ animationDelay: '1s' }} />
       <div className="absolute top-1/3 left-1/3 w-2 h-2 bg-yellow-400/30 rotate-45 animate-bounce" style={{ animationDelay: '1.5s' }} />
     </div>
   )
@@ -97,7 +97,7 @@ function SlideImages({ images, isActive, slideTitle }: { images: string[]; isAct
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 via-transparent to-transparent" />
 
       {/* Orange accent gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-orange-400 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-red-400 to-transparent" />
 
       {/* Image indicators */}
       {images.length > 1 && isActive && (
@@ -109,7 +109,7 @@ function SlideImages({ images, isActive, slideTitle }: { images: string[]; isAct
               className={cn(
                 'w-2 h-2 rounded-full transition-all duration-300',
                 imgIndex === currentImage
-                  ? 'bg-orange-500 w-6'
+                  ? 'bg-red-500 w-6'
                   : 'bg-white/40 hover:bg-white/60'
               )}
               aria-label={`Resim ${imgIndex + 1}`}
@@ -185,7 +185,7 @@ export function HeroSlider({ slides }: HeroSliderProps) {
                 {slide.subtitle && (
                   <div
                     className={cn(
-                      'inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/90 to-orange-600/90 text-white text-sm font-semibold rounded-full mb-6 backdrop-blur-sm',
+                      'inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500/90 to-red-600/90 text-white text-sm font-semibold rounded-full mb-6 backdrop-blur-sm',
                       isActive ? 'animate-fadeInUp' : 'opacity-0'
                     )}
                   >
@@ -202,7 +202,7 @@ export function HeroSlider({ slides }: HeroSliderProps) {
                   )}
                 >
                   <span className="inline-block">{slide.title.split(' ').slice(0, -1).join(' ')}</span>{' '}
-                  <span className="inline-block text-gradient-orange">{slide.title.split(' ').slice(-1)}</span>
+                  <span className="inline-block text-gradient-red">{slide.title.split(' ').slice(-1)}</span>
                 </h1>
 
                 {/* Description */}
@@ -249,14 +249,14 @@ export function HeroSlider({ slides }: HeroSliderProps) {
         <>
           <button
             onClick={prevSlide}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-orange-500 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 group border border-white/20"
+            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-red-500 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 group border border-white/20"
             aria-label="Önceki slayt"
           >
             <ChevronLeft className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-orange-500 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 group border border-white/20"
+            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/10 hover:bg-red-500 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 group border border-white/20"
             aria-label="Sonraki slayt"
           >
             <ChevronRight className="w-6 h-6 group-hover:translate-x-0.5 transition-transform" />
@@ -281,7 +281,7 @@ export function HeroSlider({ slides }: HeroSliderProps) {
             >
               {index === currentSlide && (
                 <span
-                  className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full origin-left"
+                  className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-400 rounded-full origin-left"
                   style={{
                     animation: 'progress 6s linear forwards',
                   }}
@@ -294,7 +294,7 @@ export function HeroSlider({ slides }: HeroSliderProps) {
 
       {/* Slide counter */}
       <div className="absolute bottom-8 right-8 hidden md:flex items-center gap-2 text-white/60 font-mono text-sm">
-        <span className="text-orange-500 text-2xl font-bold">{String(currentSlide + 1).padStart(2, '0')}</span>
+        <span className="text-red-500 text-2xl font-bold">{String(currentSlide + 1).padStart(2, '0')}</span>
         <span className="text-white/40">/</span>
         <span>{String(slides.length).padStart(2, '0')}</span>
       </div>

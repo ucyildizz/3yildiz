@@ -34,14 +34,14 @@ export function FeaturedProducts({
     <section className="py-24 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-100/50 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-orange-50/50 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-100/50 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-red-50/50 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative">
         {/* Section Header */}
         <ScrollReveal direction="up" className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-semibold mb-4">
             <Sparkles className="w-4 h-4" />
             {subtitle}
           </div>
@@ -49,7 +49,7 @@ export function FeaturedProducts({
             {title.split(' ').map((word, i) => (
               <span key={i}>
                 {i === title.split(' ').length - 1 ? (
-                  <span className="text-gradient-orange">{word}</span>
+                  <span className="text-gradient-red">{word}</span>
                 ) : (
                   word + ' '
                 )}
@@ -67,7 +67,7 @@ export function FeaturedProducts({
               delay={index * 100}
               className="group"
             >
-              <div className="bg-white rounded-3xl shadow-sm hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 overflow-hidden border border-gray-100 hover:-translate-y-2">
+              <div className="bg-white rounded-3xl shadow-sm hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-500 overflow-hidden border border-gray-100 hover:-translate-y-2">
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
                   <Image
@@ -83,7 +83,7 @@ export function FeaturedProducts({
                   {/* Badges */}
                   <div className="absolute top-4 left-4 flex flex-col gap-2">
                     {product.is_popular && (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-xs font-bold rounded-full shadow-lg shadow-orange-500/30">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-yellow-500 to-red-500 text-white text-xs font-bold rounded-full shadow-lg shadow-red-500/30">
                         <Star className="w-3 h-3" fill="currentColor" />
                         Popüler
                       </span>
@@ -118,7 +118,7 @@ export function FeaturedProducts({
                 {/* Content */}
                 <div className="p-6">
                   <Link href={`/urunler/${product.slug}`} className="block group/title">
-                    <h3 className="font-bold text-lg text-gray-900 group-hover/title:text-orange-600 transition-colors line-clamp-1">
+                    <h3 className="font-bold text-lg text-gray-900 group-hover/title:text-red-600 transition-colors line-clamp-1">
                       {product.name}
                     </h3>
                   </Link>
@@ -134,7 +134,7 @@ export function FeaturedProducts({
                       {product.features.slice(0, 2).map((feature) => (
                         <span
                           key={feature}
-                          className="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-medium rounded-full"
+                          className="px-3 py-1 bg-red-50 text-red-600 text-xs font-medium rounded-full"
                         >
                           {feature}
                         </span>
@@ -145,7 +145,7 @@ export function FeaturedProducts({
                   {/* View link */}
                   <Link
                     href={`/urunler/${product.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-orange-600 mt-4 group/link"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-red-600 mt-4 group/link"
                   >
                     Detayları Gör
                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />

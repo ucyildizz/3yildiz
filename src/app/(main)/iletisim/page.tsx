@@ -38,7 +38,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Telefon',
-    lines: [SITE_CONFIG.phone, SITE_CONFIG.phone2],
+    lines: [SITE_CONFIG.phone, SITE_CONFIG.phone2, SITE_CONFIG.phone3],
     href: `tel:${SITE_CONFIG.phone}`,
   },
   {
@@ -165,9 +165,9 @@ export default function ContactPage() {
                   <span className="font-medium text-gray-900">Üretim Tesisi</span>
                 </div>
                 <p className="text-sm text-gray-600">
-                  Sivas Organize Sanayi Bölgesi<br />
-                  10. Cadde No: 7<br />
-                  58140 Sivas / Türkiye
+                  Organize Sanayi Bölgesi 2.Kısım<br />
+                  6.Cadde No:15 Üçyıldız Metal<br />
+                  Sivas / Türkiye
                 </p>
               </div>
             </div>

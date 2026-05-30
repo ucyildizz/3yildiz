@@ -130,7 +130,7 @@ export function ImageUploader({
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden group border-2 border-transparent hover:border-orange-300 transition-colors"
+            className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden group border-2 border-transparent hover:border-red-300 transition-colors"
           >
             <img
               src={image}
@@ -197,8 +197,8 @@ export function ImageUploader({
             onDragLeave={handleDragLeave}
             className={`aspect-video border-2 border-dashed rounded-lg flex flex-col items-center justify-center transition-colors ${
               dragOver
-                ? 'border-orange-400 bg-orange-50 text-orange-500'
-                : 'border-gray-300 text-gray-400 hover:border-orange-400 hover:text-orange-500'
+                ? 'border-red-400 bg-red-50 text-red-500'
+                : 'border-gray-300 text-gray-400 hover:border-red-400 hover:text-red-500'
             } ${uploading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
           >
             {uploading ? (
@@ -222,13 +222,13 @@ export function ImageUploader({
           onClick={() => fileInputRef.current?.click()}
           className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors cursor-pointer ${
             dragOver
-              ? 'border-orange-400 bg-orange-50'
-              : 'border-gray-300 hover:border-orange-400'
+              ? 'border-red-400 bg-red-50'
+              : 'border-gray-300 hover:border-red-400'
           }`}
         >
           {uploading ? (
             <div className="flex flex-col items-center">
-              <Loader2 className="w-10 h-10 text-orange-500 animate-spin mb-3" />
+              <Loader2 className="w-10 h-10 text-red-500 animate-spin mb-3" />
               <p className="text-gray-600">Yükleniyor...</p>
             </div>
           ) : (
@@ -349,7 +349,7 @@ export function SingleImageUploader({
           type="button"
           onClick={() => fileInputRef.current?.click()}
           disabled={uploading}
-          className="w-full max-w-sm aspect-video border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center text-gray-400 hover:border-orange-400 hover:text-orange-500 transition-colors"
+          className="w-full max-w-sm aspect-video border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center text-gray-400 hover:border-red-400 hover:text-red-500 transition-colors"
         >
           {uploading ? (
             <Loader2 className="w-8 h-8 animate-spin" />

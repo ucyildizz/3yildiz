@@ -35,11 +35,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       primary: `
-        bg-gradient-to-r from-orange-500 to-orange-600
+        bg-gradient-to-r from-red-500 to-red-600
         text-white
-        hover:from-orange-600 hover:to-orange-700
-        hover:shadow-lg hover:shadow-orange-500/30
-        focus:ring-orange-500
+        hover:from-red-600 hover:to-red-700
+        hover:shadow-lg hover:shadow-red-500/30
+        focus:ring-red-500
         hover:-translate-y-0.5
       `,
       secondary: `
@@ -50,14 +50,14 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         hover:-translate-y-0.5
       `,
       outline: `
-        border-2 border-orange-500 text-orange-600
-        hover:bg-orange-50 hover:border-orange-600
-        focus:ring-orange-500
+        border-2 border-red-500 text-red-600
+        hover:bg-red-50 hover:border-red-600
+        focus:ring-red-500
         hover:-translate-y-0.5
       `,
       ghost: `
         text-gray-700
-        hover:bg-gray-100 hover:text-orange-600
+        hover:bg-gray-100 hover:text-red-600
         focus:ring-gray-400
       `,
       danger: `
@@ -69,11 +69,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         hover:-translate-y-0.5
       `,
       gradient: `
-        bg-gradient-to-r from-orange-500 via-red-500 to-pink-500
+        bg-gradient-to-r from-red-500 via-red-500 to-pink-500
         text-white
-        hover:from-orange-600 hover:via-red-600 hover:to-pink-600
-        hover:shadow-lg hover:shadow-orange-500/30
-        focus:ring-orange-500
+        hover:from-red-600 hover:via-red-600 hover:to-pink-600
+        hover:shadow-lg hover:shadow-red-500/30
+        focus:ring-red-500
         hover:-translate-y-0.5
         animate-gradient bg-[length:200%_200%]
       `,

@@ -46,13 +46,13 @@ export function PageLoader() {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 0.1 }}
               transition={{ duration: 1, ease: 'easeOut' }}
-              className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl"
+              className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500 rounded-full blur-3xl"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 0.1 }}
               transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
-              className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-orange-400 rounded-full blur-3xl"
+              className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-red-400 rounded-full blur-3xl"
             />
           </div>
 
@@ -65,7 +65,7 @@ export function PageLoader() {
           >
             <div className="relative w-72 h-28 md:w-80 md:h-32">
               <Image
-                src="/images/logo.png"
+                src="/images/logoNoBackground.png"
                 alt="3 Yıldız Metal"
                 fill
                 className="object-contain brightness-0 invert"
@@ -78,7 +78,7 @@ export function PageLoader() {
               initial={{ opacity: 0 }}
               animate={{ opacity: [0.3, 0.6, 0.3] }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute inset-0 -z-10 bg-orange-500/40 blur-3xl rounded-full scale-150"
+              className="absolute inset-0 -z-10 bg-red-500/40 blur-3xl rounded-full scale-150"
             />
           </motion.div>
 
@@ -103,7 +103,7 @@ export function PageLoader() {
               initial={{ width: '0%' }}
               animate={{ width: `${Math.min(progress, 100)}%` }}
               transition={{ duration: 0.1 }}
-              className="absolute inset-y-0 left-0 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full"
+              className="absolute inset-y-0 left-0 bg-gradient-to-r from-red-500 to-red-400 rounded-full"
             />
 
             {/* Shimmer effect */}
@@ -133,7 +133,7 @@ export function PageLoader() {
                   delay: i * 0.15,
                   ease: 'easeInOut',
                 }}
-                className="w-2 h-2 bg-orange-500 rounded-full"
+                className="w-2 h-2 bg-red-500 rounded-full"
               />
             ))}
           </motion.div>
@@ -157,7 +157,7 @@ export function PageLoader() {
             <p className="text-white/40 text-xs">
               Kaliteli Metal, Plastik ve Ahşap Ev Gereçleri
             </p>
-            <p className="text-orange-500/60 text-xs mt-1">
+            <p className="text-red-500/60 text-xs mt-1">
               1997&apos;den Beri
             </p>
           </motion.div>

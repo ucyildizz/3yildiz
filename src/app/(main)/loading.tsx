@@ -16,13 +16,13 @@ export default function Loading() {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-            className="absolute inset-0 border-4 border-transparent border-t-orange-500 border-r-orange-300 rounded-full"
+            className="absolute inset-0 border-4 border-transparent border-t-red-500 border-r-red-300 rounded-full"
           />
           {/* Inner ring */}
           <motion.div
             animate={{ rotate: -360 }}
             transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-            className="absolute inset-2 border-4 border-transparent border-b-orange-400 border-l-orange-200 rounded-full"
+            className="absolute inset-2 border-4 border-transparent border-b-red-400 border-l-red-200 rounded-full"
           />
           {/* Center dot */}
           <motion.div
@@ -30,7 +30,7 @@ export default function Loading() {
             transition={{ duration: 1, repeat: Infinity, ease: 'easeInOut' }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <div className="w-3 h-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full" />
+            <div className="w-3 h-3 bg-gradient-to-br from-red-500 to-red-600 rounded-full" />
           </motion.div>
         </div>
 
@@ -56,7 +56,7 @@ export default function Loading() {
                 repeat: Infinity,
                 delay: i * 0.2,
               }}
-              className="w-1.5 h-1.5 bg-orange-500 rounded-full"
+              className="w-1.5 h-1.5 bg-red-500 rounded-full"
             />
           ))}
         </div>

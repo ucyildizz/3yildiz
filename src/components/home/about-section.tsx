@@ -20,7 +20,7 @@ export function AboutSection() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-orange-50/50 to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-red-50/50 to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-4 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -44,8 +44,8 @@ export function AboutSection() {
             </div>
 
             {/* Decorative frame */}
-            <div className="absolute -top-4 -left-4 w-32 h-32 border-t-4 border-l-4 border-orange-500/30 rounded-tl-3xl" />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-b-4 border-r-4 border-orange-500/30 rounded-br-3xl" />
+            <div className="absolute -top-4 -left-4 w-32 h-32 border-t-4 border-l-4 border-red-500/30 rounded-tl-3xl" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-b-4 border-r-4 border-red-500/30 rounded-br-3xl" />
 
             {/* Stats Card */}
             <motion.div
@@ -53,12 +53,12 @@ export function AboutSection() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="absolute -bottom-8 -right-8 md:bottom-8 md:-right-12 bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-3xl shadow-2xl shadow-orange-500/30"
+              className="absolute -bottom-8 -right-8 md:bottom-8 md:-right-12 bg-gradient-to-br from-red-500 to-red-600 text-white p-8 rounded-3xl shadow-2xl shadow-red-500/30"
             >
               <div className="text-5xl font-bold">
                 {new Date().getFullYear() - SITE_CONFIG.foundedYear}+
               </div>
-              <div className="text-orange-100 mt-2 font-medium">Yıllık Tecrübe</div>
+              <div className="text-red-100 mt-2 font-medium">Yıllık Tecrübe</div>
             </motion.div>
           </motion.div>
 
@@ -69,13 +69,13 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-semibold mb-6">
               <Building2 className="w-4 h-4" />
               Hakkımızda
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Sivas&apos;tan Türkiye&apos;ye{' '}
-              <span className="text-gradient-orange">Kaliteli Üretim</span>
+              <span className="text-gradient-red">Kaliteli Üretim</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
               <strong className="text-gray-900">Üç Yıldız Metal ve Plastik Ev Aletleri</strong>,{' '}
@@ -99,8 +99,8 @@ export function AboutSection() {
                   transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                   className="flex items-center gap-3 text-gray-700"
                 >
-                  <span className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="w-4 h-4 text-orange-600" />
+                  <span className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-4 h-4 text-red-600" />
                   </span>
                   <span className="font-medium">{item}</span>
                 </motion.li>

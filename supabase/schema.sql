@@ -265,10 +265,10 @@ INSERT INTO site_settings (company_name, slogan, phone, phone2, email, address, 
 VALUES (
   'Üç Yıldız Metal',
   'Sivas''tan Dünyaya Kaliteli Üretim',
-  '0346 218 10 60',
-  '0346 218 10 61',
+  '0346 218 14 35',
+  '0530 415 34 58',
   'info@ucyildizmetal.com',
-  'Sivas Organize Sanayi Bölgesi 10. Cadde No:7',
+  'Organize Sanayi Bölgesi 2.Kısım 6.Cadde No:15',
   'Sivas',
   '1997 yılından bu yana metal, plastik ve ahşap ev gereçleri üretiyoruz.'
 );

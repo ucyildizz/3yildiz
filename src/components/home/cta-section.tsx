@@ -15,14 +15,14 @@ export function CtaSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"
         />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-orange-400/10 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-red-400/10 rounded-full blur-3xl"
         />
       </div>
 
@@ -46,7 +46,7 @@ export function CtaSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm border border-orange-500/20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 text-red-400 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm border border-red-500/20">
               <Sparkles className="w-4 h-4" />
               Özel Teklif Fırsatı
             </div>
@@ -60,7 +60,7 @@ export function CtaSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
           >
             Toptan Alım İçin{' '}
-            <span className="text-gradient-orange">Teklif Alın</span>
+            <span className="text-gradient-red">Teklif Alın</span>
           </motion.h2>
 
           <motion.p
@@ -84,7 +84,7 @@ export function CtaSection() {
             <Link href="/teklif">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 w-full sm:w-auto group shadow-lg shadow-orange-500/30"
+                className="bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700 w-full sm:w-auto group shadow-lg shadow-red-500/30"
               >
                 <FileText className="mr-2 w-5 h-5" />
                 Online Teklif İste
@@ -110,7 +110,7 @@ export function CtaSection() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-10 inline-flex items-center gap-2 text-sm text-gray-400"
           >
-            <Clock className="w-4 h-4 text-orange-500" />
+            <Clock className="w-4 h-4 text-red-500" />
             Çalışma Saatleri: Pazartesi - Cumartesi, 08:00 - 18:00
           </motion.div>
         </div>

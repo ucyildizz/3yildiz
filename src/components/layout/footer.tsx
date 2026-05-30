@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden">
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-orange-500 to-orange-600 py-16 relative">
+      <div className="bg-gradient-to-r from-red-500 to-red-600 py-16 relative">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-3xl" />
@@ -29,7 +29,7 @@ export function Footer() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/iletisim">
-                <Button variant="secondary" size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
+                <Button variant="secondary" size="lg" className="bg-white text-red-600 hover:bg-gray-100">
                   <Send className="w-5 h-5 mr-2" />
                   İletişime Geçin
                 </Button>
@@ -53,7 +53,7 @@ export function Footer() {
               <div className="flex items-center gap-3 mb-6">
                 <Link href="/" className="block">
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logoNoBackground.png"
                     alt="3 Yıldız Metal"
                     width={160}
                     height={56}
@@ -61,7 +61,7 @@ export function Footer() {
                   />
                 </Link>
               </div>
-              <div className="flex items-center gap-2 text-sm text-orange-400 mb-4">
+              <div className="flex items-center gap-2 text-sm text-red-400 mb-4">
                 <Sparkles className="w-4 h-4" />
                 <span className="font-medium">1997&apos;den Beri Hizmetinizde</span>
               </div>
@@ -70,15 +70,15 @@ export function Footer() {
                 metal, plastik ve ahşap ev gereçleri üretiyoruz.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-400 bg-gray-800/50 rounded-lg px-4 py-2">
-                <Factory className="w-4 h-4 text-orange-400" />
-                <span>Sivas Organize Sanayi Bölgesi</span>
+                <Factory className="w-4 h-4 text-red-400" />
+                <span>Organize Sanayi Bölgesi 2.Kısım</span>
               </div>
             </div>
 
             {/* Quick Links - Products */}
             <div>
               <h3 className="font-semibold text-lg mb-6 flex items-center gap-2">
-                <span className="w-8 h-0.5 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+                <span className="w-8 h-0.5 bg-gradient-to-r from-red-500 to-transparent rounded-full" />
                 Ürünlerimiz
               </h3>
               <ul className="space-y-3">
@@ -86,9 +86,9 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-orange-400 transition-all duration-300 flex items-center gap-2 group"
+                      className="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center gap-2 group"
                     >
-                      <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all text-orange-500" />
+                      <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all text-red-500" />
                       {link.label}
                     </Link>
                   </li>
@@ -99,7 +99,7 @@ export function Footer() {
             {/* Quick Links - Corporate */}
             <div>
               <h3 className="font-semibold text-lg mb-6 flex items-center gap-2">
-                <span className="w-8 h-0.5 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+                <span className="w-8 h-0.5 bg-gradient-to-r from-red-500 to-transparent rounded-full" />
                 Kurumsal
               </h3>
               <ul className="space-y-3">
@@ -107,9 +107,9 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-gray-400 hover:text-orange-400 transition-all duration-300 flex items-center gap-2 group"
+                      className="text-gray-400 hover:text-red-400 transition-all duration-300 flex items-center gap-2 group"
                     >
-                      <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all text-orange-500" />
+                      <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all text-red-500" />
                       {link.label}
                     </Link>
                   </li>
@@ -120,7 +120,7 @@ export function Footer() {
             {/* Contact Info */}
             <div>
               <h3 className="font-semibold text-lg mb-6 flex items-center gap-2">
-                <span className="w-8 h-0.5 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+                <span className="w-8 h-0.5 bg-gradient-to-r from-red-500 to-transparent rounded-full" />
                 İletişim
               </h3>
               <ul className="space-y-4">
@@ -129,13 +129,16 @@ export function Footer() {
                     href={`tel:${SITE_CONFIG.phone}`}
                     className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors group"
                   >
-                    <span className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center group-hover:bg-orange-500/20 transition-colors flex-shrink-0">
-                      <Phone className="w-5 h-5 text-orange-400" />
+                    <span className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center group-hover:bg-red-500/20 transition-colors flex-shrink-0">
+                      <Phone className="w-5 h-5 text-red-400" />
                     </span>
                     <div>
                       <div className="font-medium text-white">{SITE_CONFIG.phone}</div>
                       {SITE_CONFIG.phone2 && (
                         <div className="text-sm">{SITE_CONFIG.phone2}</div>
+                      )}
+                      {SITE_CONFIG.phone3 && (
+                        <div className="text-sm">{SITE_CONFIG.phone3}</div>
                       )}
                     </div>
                   </a>
@@ -145,15 +148,15 @@ export function Footer() {
                     href={`mailto:${SITE_CONFIG.email}`}
                     className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
                   >
-                    <span className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center group-hover:bg-orange-500/20 transition-colors flex-shrink-0">
-                      <Mail className="w-5 h-5 text-orange-400" />
+                    <span className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center group-hover:bg-red-500/20 transition-colors flex-shrink-0">
+                      <Mail className="w-5 h-5 text-red-400" />
                     </span>
                     {SITE_CONFIG.email}
                   </a>
                 </li>
                 <li className="flex items-start gap-3 text-gray-400">
                   <span className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-orange-400" />
+                    <MapPin className="w-5 h-5 text-red-400" />
                   </span>
                   <div>
                     <div>{SITE_CONFIG.address}</div>
@@ -162,7 +165,7 @@ export function Footer() {
                 </li>
                 <li className="flex items-center gap-3 text-gray-400">
                   <span className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5 text-orange-400" />
+                    <Clock className="w-5 h-5 text-red-400" />
                   </span>
                   <span>Pzt - Cmt: 08:00 - 18:00</span>
                 </li>
@@ -184,7 +187,7 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <Heart className="w-4 h-4 text-red-500 animate-pulse" fill="currentColor" />
                 <span>Türkiye&apos;de</span>
-                <span className="text-orange-400 font-semibold">Üretildi</span>
+                <span className="text-red-400 font-semibold">Üretildi</span>
               </div>
             </div>
           </div>
