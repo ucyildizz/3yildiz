@@ -148,7 +148,7 @@ export default function AboutPage() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 text-gray-700">
                   <Building2 className="w-5 h-5 text-blue-600" />
-                  <span>Sivas OSB 10. Cadde No:7</span>
+                  <span>Organize Sanayi Bölgesi 2.Kısım 6.Cadde No:15</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-700">
                   <MapPin className="w-5 h-5 text-blue-600" />
@@ -194,21 +194,13 @@ export default function AboutPage() {
 
               {/* Timeline Items */}
               {milestones.map((milestone, index) => (
-                <div
-                  key={milestone.year}
-                  className={`relative flex items-center mb-12 ${
-                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                  }`}
-                >
+                <div key={milestone.year} className="relative flex items-center mb-12">
+                  {/* Sol */}
                   <div className="w-1/2 pr-8 text-right">
                     {index % 2 === 0 && (
                       <div>
-                        <span className="text-3xl font-bold text-blue-600">
-                          {milestone.year}
-                        </span>
-                        <h3 className="text-xl font-semibold text-gray-900 mt-2">
-                          {milestone.title}
-                        </h3>
+                        <span className="text-3xl font-bold text-blue-600">{milestone.year}</span>
+                        <h3 className="text-xl font-semibold text-gray-900 mt-2">{milestone.title}</h3>
                         <p className="text-gray-600 mt-1">{milestone.description}</p>
                       </div>
                     )}
@@ -217,15 +209,12 @@ export default function AboutPage() {
                   {/* Center Dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow" />
 
+                  {/* Sağ */}
                   <div className="w-1/2 pl-8">
                     {index % 2 !== 0 && (
                       <div>
-                        <span className="text-3xl font-bold text-blue-600">
-                          {milestone.year}
-                        </span>
-                        <h3 className="text-xl font-semibold text-gray-900 mt-2">
-                          {milestone.title}
-                        </h3>
+                        <span className="text-3xl font-bold text-blue-600">{milestone.year}</span>
+                        <h3 className="text-xl font-semibold text-gray-900 mt-2">{milestone.title}</h3>
                         <p className="text-gray-600 mt-1">{milestone.description}</p>
                       </div>
                     )}

@@ -267,7 +267,7 @@ VALUES (
   'Sivas''tan Dünyaya Kaliteli Üretim',
   '0346 218 14 35',
   '0530 415 34 58',
-  'info@ucyildizmetal.com',
+  '3yildizbusiness@gmail.com',
   'Organize Sanayi Bölgesi 2.Kısım 6.Cadde No:15',
   'Sivas',
   '1997 yılından bu yana metal, plastik ve ahşap ev gereçleri üretiyoruz.'
@@ -276,7 +276,7 @@ VALUES (
 -- Admin User (password: 5858)
 -- NOT: Production'da şifre hash'lenmelidir!
 INSERT INTO admin_users (username, email, password_hash, role)
-VALUES ('metal', 'admin@ucyildizmetal.com', '5858', 'admin');
+VALUES ('metal', '3yildizbusiness@gmail.com', '5858', 'admin');
 
 -- Örnek Kategoriler
 INSERT INTO categories (name, slug, description, "order") VALUES

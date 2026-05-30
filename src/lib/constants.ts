@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   phone2: '0530 415 34 58',
   phone3: '0533 338 20 88',
   whatsapp: '+90 535 765 94 03',
-  email: 'info@ucyildizmetal.com',
+  email: '3yildizbusiness@gmail.com',
   address: 'Organize Sanayi Bölgesi 2.Kısım 6.Cadde No:15',
   city: 'Sivas',
   postalCode: '58140',
@@ -53,12 +53,7 @@ export const FEATURES = {
 export const NAV_LINKS = [
   { href: '/', label: 'Ana Sayfa' },
   { href: '/urunler', label: 'Ürünler' },
-  { href: '/kurumsal', label: 'Kurumsal', children: [
-    { href: '/kurumsal', label: 'Hakkımızda' },
-    { href: '/kurumsal/tarihce', label: 'Tarihçe' },
-    { href: '/kurumsal/degerlerimiz', label: 'Değerlerimiz' },
-    { href: '/kurumsal/kalite', label: 'Kalite Politikası' },
-  ]},
+  { href: '/kurumsal', label: 'Kurumsal' },
   { href: '/haberler', label: 'Haberler' },
   { href: '/iletisim', label: 'İletişim' },
 ] as const
@@ -73,9 +68,6 @@ export const FOOTER_LINKS = {
   ],
   kurumsal: [
     { href: '/kurumsal', label: 'Hakkımızda' },
-    { href: '/kurumsal/tarihce', label: 'Tarihçe' },
-    { href: '/kurumsal/degerlerimiz', label: 'Değerlerimiz' },
-    { href: '/kurumsal/kalite', label: 'Kalite Politikası' },
   ]
 } as const
 

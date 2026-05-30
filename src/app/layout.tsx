@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import { ViewTransitions } from 'next-view-transitions'
 import './globals.css'
 import { SITE_CONFIG } from '@/lib/constants'
-import { PageLoader } from '@/components/common/page-loader'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -76,7 +75,6 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="tr">
         <body className={`${inter.variable} font-sans antialiased`}>
-          <PageLoader />
           {children}
         </body>
       </html>
