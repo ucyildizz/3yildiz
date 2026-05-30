@@ -125,7 +125,7 @@ export function Header() {
                       onMouseEnter={() => setOpenDropdown(link.href)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
-                      {link.children.map((child, idx) => (
+                      {(link as any).children.map((child: {href: string; label: string}, idx: number) => (
                         <Link
                           key={child.href}
                           href={child.href}
@@ -228,9 +228,9 @@ export function Header() {
                 >
                   {link.label}
                 </Link>
-                {'children' in link && link.children && (
+                {'children' in link && (link as any).children && (
                   <div className="pl-4 space-y-1">
-                    {link.children.map((child) => (
+                    {(link as any).children.map((child: {href: string; label: string}) => (
                       <Link
                         key={child.href}
                         href={child.href}
