@@ -182,7 +182,14 @@ export function Footer() {
                 &copy; {currentYear} {SITE_CONFIG.fullName}. Tüm hakları saklıdır.
               </div>
               <div>
-                Doğukan Eren Özer tarafından tasarlanmıştır
+                Benzer bir site için{' '}
+                <a
+                  href="mailto:dogukanerenozer@gmail.com"
+                  className="text-red-400 hover:text-red-300 underline underline-offset-2 transition-colors"
+                >
+                  Doğukan Eren Özer
+                </a>
+                {' '}ile iletişime geçin
               </div>
               <div className="flex items-center gap-2">
                 <Heart className="w-4 h-4 text-red-500 animate-pulse" fill="currentColor" />
